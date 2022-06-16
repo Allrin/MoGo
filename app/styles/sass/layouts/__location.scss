@@ -1,0 +1,13 @@
+
+.location {
+    padding: 28px 0;
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/location/map.jpg);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
+    @media (max-width: 560px ) {
+        padding: 42px 0;  
+    }
+}
+

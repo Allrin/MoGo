@@ -1,0 +1,56 @@
+.story-card {
+
+    &__img-wrap {
+        position: relative;
+        padding-bottom: 90%;
+        overflow: hidden;
+    }
+    
+    &__img-layer1 {
+        position: relative;
+        background: var(--blue);
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__img-layer2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 16px;
+        left: -16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+    }
+    
+    &__img-add {
+    
+    }
+    
+    &_img-descr {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+    
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
+

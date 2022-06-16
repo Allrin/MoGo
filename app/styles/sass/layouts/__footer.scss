@@ -1,0 +1,144 @@
+.footer {
+    padding-top: 80px;
+    background-color: var(--white);
+
+    &__row {
+    }
+    
+    &__col {
+        padding-bottom: 42px;
+    }
+
+    &__col-title {
+        font-weight: 700px;
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    
+    &__media-col {
+        
+    }
+    
+    &__logo-link {
+    
+    }
+    
+    &__logo {
+    }
+    
+    &__descr {
+        margin-top: 30px;
+        margin-bottom: 26px;
+        font-size: 18px;
+        color: var(--grey);
+    }
+    
+    &__media {
+    }
+    
+    &__follower-count {
+        margin-bottom: 30px;
+    }
+    
+    &__follower-count .num {
+        font-size: 36px;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    &__follower-count .letter {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    &__follower-count .cta-txt {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    &__media-cta {
+        padding-right: 10px;
+        font-size: 13px;
+        font-style: italic;
+    }
+    
+    &__social-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    &__social-item {
+        margin-right: 10px;
+    }
+    
+    &__social-item:last-child {
+        margin-right: 0px;
+    }
+    
+    &__social-link {
+        
+    }
+    
+    &__social-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    &__subscribe {
+        display: flex;
+        margin-top: 46px;
+    }
+
+    &_send-form {
+        text-transform: uppercase;
+        padding: 16px;    
+    }
+
+    &__input {
+        padding: 10px 15px;
+        border: 1px solid var(--grey);
+        background-color: var(--white);
+        font-size: 18px;
+        width: 100%;
+    }
+
+    &__news {
+    }
+    
+    &__news-card {
+        margin-bottom: 20px;
+    }
+    
+    &__news-card:last-child {
+        margin-bottom: 0px;
+    }
+    
+    &__see-more {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 13px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: var(--black)
+    }
+    
+    &__copyright {
+        padding: 15px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 13px;
+        border-top: 1px solid var(--grey);
+    }
+}
+
