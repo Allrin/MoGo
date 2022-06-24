@@ -10,56 +10,134 @@
     color: var(--white);
     text-align: center;
 
-    @media (max-width: 1200px ) {
-            padding-top: 50px;
+    @include breakpoint(xl) {
+        padding-top: 90px;
     }
+
 
     &__subtitle {
         font-family: 'Kaushan Script', cursive;
         font-weight: 400;
-        font-size: 64px;
+        font-size: 4.5vw;
+
+        @include breakpoint(sm) {
+            font-size: 10vw;
+        }
     }
-    
-    &__title{
+
+    &__title {
         font-family: 'Montserrat';
         font-weight: 700;
-        font-size: 144px;
-        line-height: 1.2;    
-        margin-bottom: 116px;
+        font-size: 9.4vw;
+        line-height: 1.2;
         text-transform: uppercase;
+
+        @include breakpoint(sm) {
+            margin-top: 70px;
+            font-size: 14vw;
+        }
     }
-    
+
     &__title::after {
-        content: ''; 
+        content: '';
         width: 170px;
-        display:block;
+        display: block;
         height: 4px;
         background: var(--white);
         border-top: none;
         margin: 44px auto 0;
+
+        @include breakpoint(sm) {
+            margin-top: 50px;
+        }
     }
-    
-    &__linc { 
+
+    &__linc {
         display: inline-block;
         max-width: 370px;
-        margin-top: 30px;
-        margin-bottom: 116px;
+        margin-top: 80px;
         width: 100%;
         padding: 25px 60px;
-        color:inherit;
+        color: inherit;
         border: 4px solid var(--white);
         font-weight: 700;
         font-size: 24px;
         text-decoration: none;
-        text-transform: uppercase; 
+        text-transform: uppercase;
         transition: 1s;
+
+        @include breakpoint(sm) {
+            font-size: 18px;
+            padding: 10px 60px;
+            margin-top: 50px;
+        }
+
+        @include breakpoint(md) {
+            width: 90%;
+        }
     }
-    
+
     &__linc:hover {
         background: var(--white);
         color: var(--black);
     }
+
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 116px;
+
+        @include breakpoint(sm) {
+            margin-top: 53px;
+        }
+
+        li {
+            width: 22%;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            width: 100%;
+            font-size: 1em;
+            padding-bottom: 20px;
+            color: var(--white);
+            text-transform: uppercase;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            @include breakpoint(md) {
+                font-size: 0.8em;
+            }
+
+            @include breakpoint(sm) {
+                font-size: 0;
+            }
+
+        }
+
+        button::before {
+            content: '';
+            display: block;
+            margin-bottom: 10px;
+            height: 4px;
+            width: 100%;
+            background: var(--white);
+        }
+    }
+
+    @keyframes color-animation {
+        100% {
+            background: #F38281;
+        }
+    }
+
+    &__pagination>li>button {
+        &.is-active::before {
+            animation: color-animation 3.9s;
+        }
+    }
+
 }
-
-
-

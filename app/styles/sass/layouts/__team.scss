@@ -1,0 +1,19 @@
+.team {
+    padding: 42px 0;
+
+    @include breakpoint(xl) {
+        padding: 29px 0;
+    }
+
+    &__row {
+        margin-top: 58px;
+
+        @include breakpoint(xl) {
+            margin-top: 48px;
+        }
+
+        @include breakpoint(md) {
+            margin-top: 0;
+        }
+    }
+}

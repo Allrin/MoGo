@@ -1,3 +1,89 @@
 .autor {
-    margin: 42px auto;
+    padding: 42px 0;
+    margin: 0 auto;
+
+    &__slide-block {
+        padding: 0 50px;
+        display: flex;
+
+        @include breakpoint(md) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include breakpoint(sm) {
+            padding: 0;
+        }
+
+    }
+
+    &__slide-text {
+        display: inline-block;
+        max-width: 770px;
+
+        @include breakpoint(md) {
+            margin-top: 41px;
+        }
+    }
+
+    &__slide-img {
+        max-width: 170px;
+        max-height: 170px;
+
+        @include breakpoint(xl) {
+            width: 115px;
+            height: 115px;
+        }
+    }
+
+    &__slide-descrip {
+        margin-left: 30px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 24px;
+        font-style: italic;
+        color: var(--grey);
+
+        @include breakpoint(xl) {
+            font-size: 18px;
+        }
+
+        @include breakpoint(sm) {
+            margin-left: 0;
+            font-size: 14px;
+        }
+    }
+
+    &__slide-descrip::after {
+        background: var(--accent);
+        content: "";
+        display: block;
+        height: 4px;
+        margin-top: 22px;
+        width: 47px;
+
+        @include breakpoint(sm) {
+            width: 57px;
+        }
+    }
+
+    &__slide-name {
+        margin-left: 126px;
+        font-family: 'Kaushan Script';
+        font-weight: 400;
+        font-size: 30px;
+        color: var(--black);
+
+        @include breakpoint(xl) {
+            font-size: 24px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 18px;
+        }
+    }
+
+    &__slide-link_name {
+        text-decoration: none;
+    }
 }

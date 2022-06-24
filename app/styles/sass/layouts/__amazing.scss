@@ -1,8 +1,8 @@
 .amazing {
-    margin-top: 50px;
+    padding-top: 50px;
     padding-bottom: 20px;
 
-    @media (max-width: 1200px ) {
+    @include breakpoint(xl) {
         padding-top: 28px;
         padding-bottom: 28px;
     }
@@ -11,54 +11,44 @@
         display: flex;
         margin-bottom: 70px;
         margin-top: 70px;
-    
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             margin-bottom: 30px;
-            margin-top: 30px;  
+            margin-top: 30px;
         }
-    
-        @media (max-width: 560px ) {
+
+        @include breakpoint(sm) {
             margin-bottom: 16px;
-            margin-top: 16px;        
+            margin-top: 16px;
         }
-    }    
+    }
 
     &__card--img {
         width: 70px;
         flex-shrink: 0;
         align-self: flex-start;
-    
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             width: 60px;
         }
     }
-    
-    &__card--info{
+
+    &__card--info {
         padding-left: 30px;
-    
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             padding-left: 25px;
         }
     }
-    
+
     &__card--name {
         padding: 10px;
         font-weight: 700;
         font-size: 24px;
         text-transform: uppercase;
-    
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             font-size: 18px;
         }
-    }    
+    }
 }
-
-
-
-
-
-
-
-
-
-

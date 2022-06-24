@@ -2,9 +2,8 @@
     font-size: 18px;
     padding: 5px;
 
-    @media (max-width: 1200px ) {
+    @include breakpoint(xl) {
         font-size: 18px;
     }
-    
-}
 
+}

@@ -2,25 +2,23 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 2px;
-    row-gap: 2px;    
+    row-gap: 2px;
 
     &__item {
         --acpect-ratio: calc(100% / 3 - 2px);
         width: var(--acpect-ratio);
         position: relative;
-        padding-bottom: var(--acpect-ratio) ;
+        padding-bottom: var(--acpect-ratio);
         overflow: hidden;
     }
-    
+
     &__img {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
 }
-
-

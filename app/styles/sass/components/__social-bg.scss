@@ -1,0 +1,37 @@
+.social-bg {
+    padding: 0 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.8) 0%, rgba(233, 130, 131, 0.8) 100%);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    z-index: 1;
+    left: -3px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(sm) {
+        background: none;
+        left: 0;
+        top: 0;
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    &_act {
+        display: none;
+
+        @include breakpoint(sm) {
+            display: flex;
+        }
+    }
+
+    &__list-item {
+        width: 37px;
+        height: 37px;
+    }
+}

@@ -6,10 +6,10 @@
     line-height: 21px;
     text-align: center;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
         font-size: 14px;
     }
- 
+
     @media (max-width: 568px) {
         padding: 17px 0;
     }

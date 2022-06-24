@@ -1,68 +1,69 @@
 .numbers {
-    margin-top: 108px;
     background-color: var(--blue);
 
-    @media (max-width: 1200px ) {
-        margin-top: 60px;
+    &__indent {
+        margin-top: 108px;
+
+        @include breakpoint(xl) {
+            margin-top: 60px;
+        }
     }
+
 
     &__row {
         justify-content: center;
     }
-    
+
     &__card {
         width: calc(100% / 5 - 6px);
         padding: 63px 0;
         border-left: 1px solid var(--white);
         text-align: center;
-    
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             width: calc(100% / 5 - 4px);
             padding: 40px 0;
             border-left: 1px solid var(--white);
             text-align: center;
         }
-        
-        @media (max-width: 768px ) {
+
+        @include breakpoint(md) {
             width: calc(100% / 2 - 4px);
             padding: 30px 0;
             border-left: none;
             border-bottom: 1px solid var(--white);
         }
     }
-    
+
     &__card:last-child {
         border-right: 1px solid var(--white);
-    
-        @media (max-width: 768px ) {
+
+        @include breakpoint(md) {
             border-right: none;
             border-bottom: none;
             width: 100%;
         }
     }
-    
+
     &__card-title {
         font-weight: 700;
         font-size: 64px;
         color: var(--white);
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             font-size: 48px;
         }
     }
-    
+
     &__card-descr {
         font-weight: 400;
         font-size: 24px;
         color: var(--white);
-    
-        @media (max-width: 1200px ) {
+
+        @include breakpoint(xl) {
             font-weight: 500;
             font-size: 18px;
         }
     }
-    
+
 }
-
-
-
-
